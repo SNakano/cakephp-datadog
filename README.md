@@ -1,4 +1,7 @@
 # CakePHP Datadog
+[![Latest Stable Version](https://poser.pugx.org/snakano/cakephp-datadog/v/stable)](https://packagist.org/packages/snakano/cakephp-datadog)
+[![Total Downloads](https://poser.pugx.org/snakano/cakephp-datadog/downloads)](https://packagist.org/packages/snakano/cakephp-datadog)
+[![License](https://poser.pugx.org/snakano/cakephp-datadog/license)](https://packagist.org/packages/snakano/cakephp-datadog)
 
 CakePHP 2.x Datadog plugin.
 
