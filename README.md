@@ -4,7 +4,7 @@ CakePHP 2.x Datadog plugin.
 
 ## Installation
 
-Install datadog php tracer extension:
+Install datadog php tracer extension:\
 https://docs.datadoghq.com/tracing/languages/php/
 
 Install the plugin using composer:
