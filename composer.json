@@ -1,0 +1,20 @@
+{
+    "name": "snakano/cakephp-datadog",
+    "description": "CakePHP 2.x Datadog plugin.",
+    "keywords": [
+        "datadog",
+        "tracing",
+        "cakephp"
+    ],
+    "type": "cakephp-plugin",
+    "require": {
+        "cakephp/cakephp": "<3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "s.nakano",
+            "email": "s.nakano@guppy.co.jp"
+        }
+    ]
+}
