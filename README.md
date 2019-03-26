@@ -11,19 +11,19 @@ Install datadog php tracer extension:\
 https://docs.datadoghq.com/tracing/languages/php/
 
 Install the plugin using composer:
-```
+```shell
 composer require "snakano/cakephp-datadog:1.0.*"
 ```
 
 ## Usage
 
 Load the plugin:
-```
+```php
 CakePlugin::load('Datadog');
 ```
 
 Add the Dispatcher Filter to the `bootstrap.php` file:
-```
+```php
 Configure::write('Dispatcher.filters', array(
     'AssetDispatcher',
     'CacheDispatcher',
@@ -32,6 +32,6 @@ Configure::write('Dispatcher.filters', array(
 ```
 
 Add the application name to the `bootstrap.php` file:
-```
+```php
 Configure::write('Datadog.appName', 'My App Name');
 ```
