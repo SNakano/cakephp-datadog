@@ -6,6 +6,12 @@
         "tracing",
         "cakephp"
     ],
+    "require": {
+        "composer/installers": "*"
+    },
+    "extra": {
+        "installer-name": "Datadog"
+    },
     "type": "cakephp-plugin",
     "license": "MIT",
     "authors": [
