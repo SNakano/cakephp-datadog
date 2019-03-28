@@ -7,9 +7,6 @@
         "cakephp"
     ],
     "type": "cakephp-plugin",
-    "require": {
-        "cakephp/cakephp": "<3"
-    },
     "license": "MIT",
     "authors": [
         {
