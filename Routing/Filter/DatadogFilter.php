@@ -5,7 +5,7 @@ class DatadogFilter extends DispatcherFilter
 {
     public function beforeDispatch(CakeEvent $event)
     {
-        if (!class_exists('DDTrace\\GlobalTracer')) {
+        if (!function_exists('dd_trace')) {
             return true;
         }
 
@@ -22,14 +22,14 @@ class DatadogFilter extends DispatcherFilter
         if (null === $scope) {
             return false;
         }
-        $appName = Configure::read('Datadog.appName');
+        $serviceName = Configure::read('Datadog.serviceName');
         $request = $event->data['request'];
         $controller = $request->params['controller'];
         $action = $request->params['action'];
 
         $span = $scope->getSpan();
         $span->overwriteOperationName('cakephp.request');
-        $span->setTag(DDTrace\Tag::SERVICE_NAME, $appName);
+        $span->setTag(DDTrace\Tag::SERVICE_NAME, $serviceName);
         $span->setTag(DDTrace\Tag::RESOURCE_NAME, $controller . '/' . $action);
         $span->setTag('cakephp.controller', $controller);
         $span->setTag('cakephp.action', $action);
