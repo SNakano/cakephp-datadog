@@ -31,7 +31,7 @@ Configure::write('Dispatcher.filters', array(
 ));
 ```
 
-Add the application name to the `bootstrap.php` file:
+Add the service name to the `bootstrap.php` file:
 ```php
-Configure::write('Datadog.appName', 'My App Name');
+Configure::write('Datadog.serviceName', 'My App Name');
 ```
