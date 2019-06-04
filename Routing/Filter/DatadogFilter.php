@@ -31,6 +31,7 @@ class DatadogFilter extends DispatcherFilter
         $span->overwriteOperationName('cakephp.request');
         $span->setTag(DDTrace\Tag::SERVICE_NAME, $serviceName);
         $span->setTag(DDTrace\Tag::RESOURCE_NAME, $controller . '/' . $action);
+        $span->setTag(DDTrace\Tag::ANALYTICS_KEY, true);
         $span->setTag('cakephp.controller', $controller);
         $span->setTag('cakephp.action', $action);
         $span->setTag('http.url', Router::url($request->here(), true));
